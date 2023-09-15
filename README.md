@@ -3,6 +3,15 @@ python docker restapi project
 
 ## Run this project
 
+### Docker
+
+All you need to run this project is **docker**
+
+1. set up docker
+2. use docker to run that project
+
+### Run Service
+
 ``` bash
 docker-compose up -d service
 ```
@@ -29,7 +38,13 @@ docker-compose run:
 
 * Usage: It is typically used for temporary tasks and is not intended for starting long-running background services. It creates a new container for the specified service, executes the command, and then stops the container.
 
-**up is preferred**
+**up is preferred for service**
+
+### Run Devbox
+
+```bash
+docker-compose run -p 8080:8080 devbox
+```
 
 ## Debug
 

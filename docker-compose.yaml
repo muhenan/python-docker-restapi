@@ -5,7 +5,17 @@ services:
     build:
       context: .
       dockerfile: docker/service.dockerfile
-    container_name: python-docker-restapi
+    container_name: python-docker-restapi-service
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/app
+
+  devbox:
+    build:
+      context: .
+      dockerfile: docker/devbox.dockerfile
+    container_name: python-docker-restapi-devbox
     ports:
       - "8080:8080"
     volumes:
