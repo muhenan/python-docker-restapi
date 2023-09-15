@@ -1,0 +1,12 @@
+version: '1.0'
+
+services:
+  service:
+    build:
+      context: .
+      dockerfile: docker/service.dockerfile
+    container_name: python-docker-restapi
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/app
