@@ -48,4 +48,6 @@ docker-compose run -p 8080:8080 devbox
 
 ## Debug
 
+### FastApi project documentation and testing
+
 `http://localhost:8080/docs`
